@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+strong{
+    font-weight: bold;
+}
+em{
+    font-style: italic;
+}
+
+@each $h, $s in (h1: 3rem, h2: 2.5rem, h3: 2rem, h4: 1.5rem, blockquote: 1.5rem){
+    #{$h}{
+        font-size: #{$s};
+    }
+}
+
+code, pre{
+    font-family: monospace;
+}
+
+q, blockquote{
+    font-family: serif;
+}

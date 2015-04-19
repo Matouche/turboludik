@@ -1,0 +1,105 @@
+{
+    "title": "Turboludik demo",
+    "home": {
+        "text": "#Turboludik demo\nWelcome into this turboludik demo.",
+        "choices": [
+            {
+                "text": "Let's go !",
+                "goto": "markdown"
+            }
+        ]
+    },
+    "markdown": {
+        "text": "#Markdown\nYou can use **Markdown** to *write* text.",
+        "choices": [
+            {
+                "text": "What's next ?",
+                "goto": "multiplechoice"
+            }
+        ]
+    },
+    "multiplechoice": {
+        "text": "#Multiple choice\nThe killer feature of *turboludik* is to be interactive. You can easely make a menu like this one.\n\nWhat do you want ?",
+        "choices": [
+            {
+                "text": "I want to see a picture",
+                "goto": "picture"
+            },
+            {
+                "text": "I want to watch a video",
+                "goto": "video"
+            },
+            {
+                "text": "I want music !",
+                "goto": "music"
+            },
+            {
+                "text": "I want everithing !",
+                "goto": "finale"
+            }
+        ]
+    },
+    "picture": {
+        "text": "#Image\nHo ho ! Now we have a background image. Better, isn'it ? You'll go back to the menu in 15 seconds.",
+        "image": "ressources/voyage.jpg",
+        "duration": 15,
+        "next": "multiplechoice"
+    },
+    "video": {
+        "text": "#Video\nWhat a wonderful old French movie ! If you haven't yet, please watch *Le Voyage dans la Lune* by George Méliès. It's available on [archive.org](http://bit.ly/1Dm77TJ).",
+        "video": {
+            "mp4": "ressources/voyage.mp4",
+            "webm": "ressources/voyage.webm"
+        },
+        "duration": 20,
+        "next": "multiplechoice"
+    },
+    "music": {
+        "text": "#Video\nListen ! It's *The New World Symphony* by Dvorak ! Also available on [archive.org](http://bit.ly/1G64E3Y).",
+        "audio": {
+            "mp3": "ressources/voyage.mp3"
+        },
+        "duration": 20,
+        "next": "multiplechoice"
+    },
+    "finale": {
+        "text": "#Everything combined\nYou can combine video, audio, multiple choice and image (as a fallback) for making a really multimedia and interractive interface.",
+        "image": "ressources/voyage.jpg",
+        "video": {
+            "mp4": "ressources/voyage.mp4",
+            "webm": "ressources/voyage.webm"
+        },
+        "audio": {
+            "mp3": "ressources/voyage.mp3"
+        },
+        "choices": [
+            {
+                "text": "Go here",
+                "goto": "end",
+                "x": 10,
+                "y": 10
+            },
+            {
+                "text": "Here is better!",
+                "goto": "end",
+                "x": 25,
+                "y": 50
+            },
+            {
+                "text": "This place looks good",
+                "goto": "end",
+                "x": 50,
+                "y": 90
+            }
+        ]
+    },
+    "end": {
+        "text": "#That's all folks !\nThank you :D",
+        "choices": [
+            {
+                "text": "Back in the past !",
+                "goto": "home"
+            }
+        ]
+    }
+}

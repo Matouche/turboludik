@@ -1,0 +1,17 @@
+.popup{
+    width: 80%;
+    min-height: 25%;
+    padding: 10px;
+    margin: 25% auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    background-color: #fff;
+    color: #000;
+    
+    transition: opacity 1s;
+    h1{
+        padding-bottom: 10px;
+        border-bottom: solid 1px grey;
+    }
+}

@@ -1,0 +1,15 @@
+@import 'compass/reset';
+
+@import 'partials/typography';
+@import 'partials/popup';
+@import 'partials/circles';
+
+html,body{   
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    color: #fff;
+    background-color: #000;
+}
