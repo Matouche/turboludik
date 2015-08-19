@@ -1,15 +1,16 @@
+$color: #fd0;
+
 @import 'compass/reset';
+@import 'compass/typography/links/hover-link';
 
 @import 'partials/typography';
 @import 'partials/popup';
+
 @import 'partials/circles';
 
-html,body{   
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
+html{   
     color: #fff;
     background-color: #000;
 }
+
+@import 'partials/layout';

@@ -1,7 +1,7 @@
 {
     "title": "Turboludik demo",
     "home": {
-        "text": "#Turboludik demo\nWelcome into this turboludik demo.",
+        "text": "#Turboludik demo\nWelcome into this turboludik demo.\n\n[Link](#picture)",
         "choices": [
             {
                 "text": "Let's go !",
@@ -46,10 +46,10 @@
         "next": "multiplechoice"
     },
     "video": {
-        "text": "#Video\nWhat a wonderful old French movie ! If you haven't yet, please watch *Le Voyage dans la Lune* by George Méliès. It's available on [archive.org](http://bit.ly/1Dm77TJ).",
+        "text": "#Video\nWhat a wonderful old French movie ! If you haven't yet, please watch *Le Voyage dans la Lune* by George Méliès. It's available on [archive.org](http://bit.ly/1K3LEH2).",
         "video": {
-            "mp4": "ressources/voyage.mp4",
-            "webm": "ressources/voyage.webm"
+            "mp4": "http://bit.ly/1HTYd1N",
+            "ogg": "http://bit.ly/1K3LEH2"
         },
         "duration": 20,
         "next": "multiplechoice"
@@ -57,7 +57,7 @@
     "music": {
         "text": "#Video\nListen ! It's *The New World Symphony* by Dvorak ! Also available on [archive.org](http://bit.ly/1G64E3Y).",
         "audio": {
-            "mp3": "ressources/voyage.mp3"
+            "mp3": "http://bit.ly/1G64E3Y"
         },
         "duration": 20,
         "next": "multiplechoice"
@@ -66,11 +66,11 @@
         "text": "#Everything combined\nYou can combine video, audio, multiple choice and image (as a fallback) for making a really multimedia and interractive interface.",
         "image": "ressources/voyage.jpg",
         "video": {
-            "mp4": "ressources/voyage.mp4",
-            "webm": "ressources/voyage.webm"
+            "mp4": "http://bit.ly/1HTYd1N",
+            "ogg": "http://bit.ly/1K3LEH2"
         },
         "audio": {
-            "mp3": "ressources/voyage.mp3"
+            "mp3": "http://bit.ly/1G64E3Y"
         },
         "choices": [
             {
@@ -82,8 +82,8 @@
             {
                 "text": "Here is better!",
                 "goto": "end",
-                "x": 25,
-                "y": 50
+                "x": 75,
+                "y": 25
             },
             {
                 "text": "This place looks good",
