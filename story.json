@@ -1,7 +1,7 @@
 {
     "title": "Turboludik demo",
     "home": {
-        "text": "#Turboludik demo\nWelcome into this turboludik demo.\n\n[Link](#picture)",
+        "text": "#Turboludik demo\nWelcome into this turboludik demo.",
         "choices": [
             {
                 "text": "Let's go !",
@@ -94,7 +94,7 @@
         ]
     },
     "end": {
-        "text": "#That's all folks !\nThank you :D",
+        "text": "#That's all folks !\nThank you :D  \n[Get started on Github !](https://github.com/Matouche/turboludik)",
         "choices": [
             {
                 "text": "Back in the past !",
